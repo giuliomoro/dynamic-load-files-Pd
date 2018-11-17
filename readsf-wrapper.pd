@@ -1,0 +1,11 @@
+#N canvas 624 137 450 300 10;
+#X obj 95 116 readsf~;
+#X obj 61 246 dac~ 1 2;
+#X obj 77 70 r \$1-readsf-\$2-inlet;
+#X obj 169 185 s \$1-readsf-\$2-done;
+#X obj 99 157 *~ \$3;
+#X connect 0 0 4 0;
+#X connect 0 1 3 0;
+#X connect 2 0 0 0;
+#X connect 4 0 1 0;
+#X connect 4 0 1 1;
